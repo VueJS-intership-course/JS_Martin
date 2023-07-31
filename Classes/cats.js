@@ -17,6 +17,5 @@ function cats (array) {
         let cat = new Cat(name, age);
         cat.meow();
     }
-
 }
 cats(['Mellow 2', 'Tom 5'])

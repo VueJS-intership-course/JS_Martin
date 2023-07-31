@@ -1,29 +1,28 @@
 function song(array) {
-
-    class Song {
-        constructor (type, name, time) {
-            this.type = type;
-            this.name = name;
-            this.time = time;
-        }
+  class Song {
+    constructor(type, name, time) {
+      this.type = type;
+      this.name = name;
+      this.time = time;
     }
+  }
 
-    let songs = [];
-    let numberOfSongs = array.shift();
-    let typeSong = array.pop();
+  let songs = [];
+  let numberOfSongs = array.shift();
+  let typeSong = array.pop();
 
-    for (let index = 0; index < numberOfSongs; index++) {
-        let [type, name, time] = array[index].split('_');
-        let song = new Song(type, name, time);
-        songs.push(song);
-    }
+  for (let index = 0; index < numberOfSongs; index++) {
+    let [type, name, time] = array[index].split('_');
+    let song = new Song(type, name, time);
+    songs.push(song);
+  }
 
-   if (typeSong === 'all') {
-    songs.forEach(element => console.log(element.name));
-   } else {
-    let filtered = songs.filter(element => element.type === typeSong);
-    filtered.forEach(element => console.log(element.name))
-   }
+  if (typeSong === 'all') {
+    songs.forEach((element) => console.log(element.name));
+  } else {
+    let filtered = songs.filter((element) => element.type === typeSong);
+    filtered.forEach((element) => console.log(element.name));
+  }
 }
 song([
   3,

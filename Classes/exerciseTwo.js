@@ -16,7 +16,6 @@ class Zebra extends Animal {
         this.origin = origin;
     }
 
-
     zebraMessage() {
         console.log(`Name: ${this.name}, ${this.age} years old. Origin: ${this.origin}.`);
     }

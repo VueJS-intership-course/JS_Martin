@@ -18,7 +18,7 @@ class Rectangle extends Shape {
 }
 
 const triangle = new Triangle();
-console.log(triangle.area(5, 4));
+console.log(triangle.area(5, 3));
 
 const rectangle = new Rectangle();
 console.log(rectangle.area(5, 5));
